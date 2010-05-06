@@ -1,0 +1,4 @@
+!.gitignore
+chat/data/log/*
+.DS_Store
+miscBanners/*
