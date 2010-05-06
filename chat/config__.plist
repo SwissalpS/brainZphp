@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist>
+	<dict>
+		<key>debugLevel</key><integer>7</integer>
+		<key>myDetails</key><dict>
+			<key>roomUID</key><string>lobby</string>
+			<key>superUIDs</key><dict>
+				<key>roomFE</key><string>Room0frontEnd</string>
+				<key>owner</key><string>Room0frontEnd</string>
+				<key>murphy</key><string>zen</string>
+			</dict>
+		</dict>
+		<key>pid</key><dict>
+			<key>lockExtension</key><string>.lock</string>
+			<key>scriptExtension</key><string>.php</string>
+		</dict>
+		<key>paths</key><dict>
+			<key>userPrefs</key><string>data/users/userPrefs.plist</string>
+			<key>userSandbox</key><string>data/users</string>
+			<key>commandsPath</key><string>commands.plist</string>
+		</dict>
+		<key>runTimeOut</key><integer>0</integer>
+		<key>mySocket</key><dict>
+			<key>host</key><string>localhost</string>
+			<key>port</key><integer>1234</integer>
+			<key>maxClients</key><integer>3</integer>
+		</dict>
+		<key>lang</key><dict>
+			<key>en</key><dict>
+				<key>broadcastWait4logon</key><string>--- waiting for a member to logon ---</string>
+				<key>welcomeBanner</key><string>.
+.
+  
+                                                  888888b.                   d8b          Y88b   d88P 
+       Talk to Me. And Pass the joint.:-)         888  "88b                  Y8P           Y88b d88P  
+                                                  888  .88P                                 Y88o88P   
+       888  888 888d888 .d88b.  888  888          8888888K.  888d888 8888b.  888 88888b.     Y888P    
+       888  888 888P"  d88""88b `Y8bd8P'          888  "Y88b 888P"      "88b 888 888 "88b    d888b    
+       888  888 888    888  888   X88K  888888    888    888 888    .d888888 888 888  888   d88888b   
+       Y88b 888 888    Y88..88P .d8""8b.          888   d88P 888    888  888 888 888  888  d88P Y88b  
+        "Y88888 888     "Y88P"  888  888          8888888P"  888    "Y888888 888 888  888 d88P   Y88b 
+
+
+
+
+ ,________ _
+  }`(==(----'   '----)==)`{
+ (__/~~`             `~~\__)
+.
+.</string>
+				<key>logonPrompt1</key><string>Hi, please input your case sensitive uid: </string>
+				<key>logonFinal</key><string>welcome</string>
+				<key>byeUserFormat</key><string>Good bye %1$s</string>
+				<key>userHasLeftFormat</key><string>%1$s has left the building</string>
+			</dict>
+		</dict>
+		<key>forceFlushOnExit</key><true/>
+	</dict>
+</plist>
