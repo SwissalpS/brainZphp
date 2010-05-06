@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist>
+	<dict>
+		<key>debugLevel</key><integer>7</integer>
+		<key>iSetTimeLimit</key><integer>0</integer>
+		<key>myDetails</key><dict>
+			<key>roomUID</key><string>lobby</string>
+			<key>superUIDs</key><dict>
+				<key>roomFE</key><string>Room0frontEnd</string>
+				<key>owner</key><string>Room0frontEnd</string>
+				<key>murphy</key><string>zen</string>
+			</dict>
+		</dict>
+		<key>mySocket</key><dict>
+			<key>maxClients</key><integer>5</integer>
+			<key>iProtocolFamily</key><integer>2</integer>
+			<key>iType</key><integer>1</integer>
+			<key>iProtocol</key><integer>0</integer>
+			<key>host</key><string>localhost</string>
+			<key>port</key><integer>49494</integer>
+		</dict>
+		<key>myParent</key><dict>
+			<key>host</key><string>localhost</string>
+			<key>port</key><integer>-1</integer>
+		</dict>
+		<key>myChildren</key><dict>
+			<key>hostPool</key><dict>
+				<key>localhost</key><dict>
+					<key>iStartPort</key><integer>49496</integer>
+					<key>iMaxAmount</key><integer>98</integer>
+				</dict>
+			</dict>
+			<key>bAllowMultipleOnSamePort</key><true/>
+		</dict>
+		<key>pid</key><dict>
+			<key>lockName</key><string>lobby</string>
+			<key>lockExtension</key><string>.lock</string>
+			<key>scriptExtension</key><string>.php</string>
+		</dict>
+		<key>paths</key><dict>
+			<key>pidPath</key><string>data/</string>
+			<key>userPrefs</key><string>data/rooms/lobby_userList.plist</string>
+			<key>userSandbox</key><string>data/users</string>
+			<key>commandsPath</key><string>data/commands.plist</string>
+			<key>uidPool</key><string>data/UIDs/</string>
+		</dict>
+		<key>iCountClients</key><integer>0</integer>
+		<key>lang</key><dict>
+			<key>en</key><dict>
+				<key>broadcastWait4logon</key><string>--- waiting for a member to logon ---</string>
+				<key>welcomeBanner</key><string>[32;40m.                                                                             .
+                                                                               
+                     Talk to Me. And Pass the joint.:-)                        
+                                                                               
+                     888  888 888d888 .d88b.  888  888                         
+                     888  888 888P   d88  88b `Y8bd8P                          
+                     888  888 888    888  888   X88K  888888                   
+                     Y88b 888 888    Y88..88P .d8  8b.                         
+                       Y88888 888      Y88P   888  888                         
+              888888b.                                Y88b   d88P              
+              888   88b ~LukeZimmermann &amp; ZendeLuna~   888b d88P               
+              888  .88P                                 Y88o88P                
+              8888888K.  888d888 8888b.  888 88888b.     Y888P                 
+              888   Y88b 888P        88b 888 888  88b    d888b                 
+              888    888 888    .d888888 888 888  888   d88888b                
+              888   d88P 888    888  888 888 888  888  d88P Y88b               
+              8888888P   888     Y888888 888 888  888 d88P   Y88b              
+                                                                               
+.                                                                             .
+</string>
+				<key>logonPrompt1</key><string>Hi, please input your case sensitive:</string>
+				<key>logonFinal</key><string>welcome %1$s</string>
+				<key>byeUserFormat</key><string>Good bye %1$s</string>
+				<key>userHasLeftFormat</key><string>%1$s has left the building</string>
+				<key>insufficientPermission</key><string>insufficient permission to do so</string>
+				<key>logonUIDnonExistant</key><string>Sorry, that wasn't it. It doesn't exist</string>
+				<key>logonFailBye</key><string>Goodbye.</string>
+				<key>logonPrompt2</key><string>please input your case sensitive uid: </string>
+			</dict>
+		</dict>
+		<key>listIPblack</key><array>
+			<string>0.0.0.0</string>
+			<string>255.255.255.255</string>
+		</array>
+		<key>useWhiteList</key><false/>
+		<key>coreVersion</key><string>20100429_103006</string>
+		<key>forceFlushOnExit</key><true/>
+		<key>bUIDsExpireImmediatlyAfterDeletion</key><false/>
+		<key>bUIDsOnlyTouchWhenDeleting</key><true/>
+		<key>iUIDsValidForHours</key><integer>504</integer>
+	</dict>
+</plist>
