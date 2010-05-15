@@ -1,0 +1,91 @@
+#!/bin/sh
+# run
+#
+# starter script for uroxBrainZ (aka brainX) chat server
+# makes sure server is started from path of this script
+#
+# todo: fix the backgrounding issue
+#
+# author: Luke aka SwissalpS
+# version: 20100515_193747
+#
+
+# keep note of current dir
+oldPwd="`pwd`";
+
+# rember target dir
+newPwd="`dirname "$0"`";
+# change to the directory the executable is in.
+cd "$newPwd";
+
+argBackground="";
+argLog="";
+argConfig="";
+tailAfter="NO";
+# parse arguments and do accordingly
+if [ 0 -ne $# ]; then
+	for (( i=1; i <= $#; i++ ))
+	do
+		case "${!i}" in
+			-t)
+				echo "tail after - we'll see if this works (requires log file)";
+				tailAfter="YES";
+				;;
+			-b)
+				echo "put in background - not yet fully functional";
+				argBackground=" &";
+				;;
+			-l)
+				echo "log - hope we can write there";
+				((j=++i));
+				logFile="${!j}";
+				if [ "" == "$logFile" ] || [ "-" == "${logFile:0:1}" ]; then
+					logFile="$newPwd/data/log/logfile`date '+%Y%m%d';`";
+					((--i));
+				fi;
+				argLog=" >> \"$logFile\"";
+				echo "  trying $logFile";
+				;;
+			-c)
+				echo "use config";
+				((j=++i));
+				configFile="${!j}";
+				if [ -f "$configFile" ]; then
+					argConfig="\" $configFile\"";
+				else
+					((--i));
+					echo "   discarding as it doesn't seem to be a file";
+				fi;
+				;;
+			*)
+				echo "ignored unknown param: ${!i}";
+				;;
+			help)
+				echo "run [-b] [-l[ <log file path>]] [-c <config.plist path>] [-t]\n-b run in background\n-l log output (for debugging)\n-c set config.plist to use";
+				cd "$oldPwd";
+				exit 0;
+				;;
+		esac;
+	done;
+fi;
+
+if [ "" == "$argBackground" ]; then
+	./startServer$argConfig$argLog;
+else
+	#./startServer$argConfig$argLog
+	#`./startServer $argConfig $argLog` &
+	#(./startServer)&>/dev/null;
+	echo "to run in background use: ./run &\nI can't figure how to do this for you and have the tail work, sorry. Maybe you can help?";
+#echo "cary on";
+fi;
+
+if [ "YES" == "$tailAfter" ] && [ "" != "$logFile" ]; then
+	echo "Will tail log in 3 seconds";
+	sleep 3;
+	./tailServer "$logFile";
+fi;
+
+# change back to original dir
+cd "$oldPwd";
+echo "back to where it all began";
+exit 0;

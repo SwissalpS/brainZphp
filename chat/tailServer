@@ -1,0 +1,15 @@
+#!/bin/sh
+# tailServer
+#
+# intended to tail the logs while debugging
+#
+# author: Luke aka SwissalpS
+# version: 20100515_211946
+#
+
+if [ -f "$1" ]; then
+	`tail -f -n -50 "$1"`;
+else
+	echo "please give me a valid file to tail";
+fi;
+exit 0;
