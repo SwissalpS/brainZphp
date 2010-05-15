@@ -1,0 +1,28 @@
+#!/usr/bin/php
+<?php
+/* * * *
+ * * startServer
+ * *
+ * * version 20100515_212837
+ * * version 20091023_193730 (CC) Luke JZ aka SwissalpS
+ * * * */
+/*
+error_reporting(E_ALL); // 0); //
+*/
+
+ini_set('include_path', getcwd() . DIRECTORY_SEPARATOR . 'includes'
+									. PATH_SEPARATOR . ini_get('include_path'));
+
+/*
+// for debugging for standalone package:
+ini_set('include_path', getcwd() . '/includes:');
+*/
+
+require_once('SssS_SocketController.inc');
+
+$oServer = (isset($_SERVER['argv'][1]))
+		? new SssS_SocketController($_SERVER['argv'][1])
+		: new SssS_SocketController();
+
+/* * * *\ startServer (CC) Luke JZ aka SwissalpS /* * * */
+?>
