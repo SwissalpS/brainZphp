@@ -1,8 +1,12 @@
 !.gitignore
 chat/data/log/*
+!chat/data/log/INFO
 chat/data/rooms/*
+!chat/data/rooms/INFO
 chat/data/UIDs/*
+!chat/data/UIDs/INFO
 chat/data/users/*
+!chat/data/users/INFO
 chat/data/commands.plist
 chat/data/config.plist
 .DS_Store
