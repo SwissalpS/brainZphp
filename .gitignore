@@ -1,4 +1,9 @@
 !.gitignore
 chat/data/log/*
+chat/data/rooms/*
+chat/data/UIDs/*
+chat/data/users/*
+chat/data/commands.plist
+chat/data/config.plist
 .DS_Store
 miscBanners/*
