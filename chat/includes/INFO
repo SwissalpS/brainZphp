@@ -1,0 +1,13 @@
+The files in this folder are the selection required for brainX to work.
+They have been extracted from the SwissalpS PHP collection.
+
+If you have a current copy of the SwissalpS PHP collection
+or have a git fork of SwissalpS/phocoa
+you may also have these files in your include path.
+
+
+ALL THE CODE IS PROVIDED AS IS WITHOUT ANY WARANTY OF FUNCTION
+
+YOU MAY EXTRACT, REUSE, CHANGE ANY FILES UNLESS IT CONTAINS A MORE RESTRICTIVE
+POLICY. Please fork on git so we all can enjoy the improvements you have come
+up with.

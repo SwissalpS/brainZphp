@@ -1,0 +1,43 @@
+
+ALL THE CODE IS PROVIDED AS IS WITHOUT ANY WARANTY OF FUNCTION
+
+YOU MAY EXTRACT, REUSE, CHANGE ANY FILES UNLESS IT CONTAINS A MORE RESTRICTIVE
+POLICY. Please fork on git so we all can enjoy the improvements you have come
+up with.
+
+
+Quick-Install:
+==============
+
+download and unpack.
+cd into ##PRODUCT_NAME##/##BASE_DIR##
+run server:
+./run
+
+if fails to run, check that there is a writeable data dir
+
+connect with eg telnet:
+telnet localhost 49494
+
+login as 'Murphy':
+zen
+
+check echo:
+type some text
+
+shutdown server (and save configs):
+/end
+
+now you should have a config.plist in the data dir
+you can edit this to relocate the directories and set the welcome banner etc.
+
+
+......... to come .......
+or run as daemon in background:
+./run -b
+
+or run as daemon in background logging to file:
+./run -bl [<file name>]
+
+or run with specified config.plist:
+./run -c <file name>
