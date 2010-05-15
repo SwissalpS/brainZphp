@@ -1,0 +1,17 @@
+
+#######													#######
+### consider this software alpha, experimental and unstable ###
+####													   ####
+
+
+The story: a friend and I wanted to have a simple lightweight but private chat-channel of our own.
+I threw together a quick script that allowed us to basically log in to an ssl server and post our messages to a file we both were presented.
+The next step (uroxBrainZ) was to go memory only, no files on disk….well at least not personal info.
+That meant moving from https to telnet protocol and from browser to terminal.
+Now the connection procedure looks like this: one party runs the php server on a dynamic ip and opens an ssh port so the second party can
+log in and then locally log in with telnet to the chat server. (also more parties possible)
+I soon experimented with all kinds of ways to transparently run shell and php scripts. (only available to super duper users)
+It turned out to be an excellent educational tool. Being able to demonstrate the use of commands and functions.
+Also while collaborating on the same machine/network this was, I dear say, handier than ‘message’.
+- no readline support as ‘lightweight’ also means not much pre installed on the host. I did write a little cocoa console with history support and to some extent, autocompletion.
+keep an eye on my phocoa fork. I have this code integrated as I intend to have the https frontend using phocoa framework. The cocoa console will probably also first apear in that fork. They all belong together to a bigger bag of tools.
