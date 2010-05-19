@@ -50,7 +50,8 @@ PATH_PROJECT=../
 #  *
 #  * @var               string PATH_PHPDOC
 #  */
-PATH_PHPDOC=/Volumes/UNIX/ImgSrach/public/public_web/PhpDocumentor/phpdoc
+PATH_PHPDOC=/Volumes/UNIXb/gitSwissalpS/PhpDocumentor/phpdoc
+#/ImgSrach/public/public_web/PhpDocumentor/phpdoc
 
 #/**
 #  * where documentation will be put
