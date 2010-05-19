@@ -9,5 +9,6 @@ chat/data/users/*
 !chat/data/users/INFO
 chat/data/commands.plist
 chat/data/config.plist
+docs/SwissalpS_MashS/*
 .DS_Store
 miscBanners/*
